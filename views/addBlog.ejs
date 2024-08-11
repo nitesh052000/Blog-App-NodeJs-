@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+        <title>Homepage</title>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container mt-3">
+   <form action="/blog" method="post">
+    <div class="mb-3">
+    <label for="coverImage" class="form-label">Cover Image</label>
+    <input type="file" , class="form-control" , id="coverImage" , name="coverImage" , aria-describedby="coverImage" />
+    </div>
+  <div class="mb-3">
+    <label for="body" class="form-label">Email address</label>
+    <input 
+    type="text",
+    class="form-control",
+    id="title",
+    name="title",
+    aria-describedby="title"
+    />
+    </div>
+    <div class="mb-3">
+        <textarea name="body" class="form-control" id="body"></textarea>
+        <label for="body">Body</label>
+        
+    </div>
+    <div class="mb-3">
+        <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+     <%- include('./partials/script') %>
+</body>
+
+</html>
